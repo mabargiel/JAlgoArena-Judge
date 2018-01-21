@@ -8,6 +8,8 @@ buildscript {
     dependencies {
         classpath "org.springframework.boot:spring-boot-gradle-plugin:$spring_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath("io.springfox:springfox-swagger2:2.7.0")
+        classpath("io.springfox:springfox-swagger-ui:2.7.0")
     }
 }
 
@@ -49,6 +51,9 @@ dependencies {
             "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
             "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version",
             "org.jetbrains.kotlin:kotlin-compiler:$kotlin_version"
+
+    compile 'io.springfox:springfox-swagger2:2.7.0',
+            'io.springfox:springfox-swagger-ui:2.7.0'
 
     runtime "org.jetbrains.kotlin:kotlin-runtime:$kotlin_version"
 
